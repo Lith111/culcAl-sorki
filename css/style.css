@@ -1,0 +1,93 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-transform: capitalize;
+    outline: none;
+}
+/* flex of body to responsive */
+html,body{
+    display: flex;
+    justify-content: center;
+    color: #ecf0f1;
+    background-color: #171825;
+    font-family: sans-serif;
+    animation: fadein 1.5s;
+    -webkit-animation: fadein 1.5s;
+}
+@keyframes fadein {
+0%{
+    opacity: 0;
+}
+100%{
+    opacity: 1;
+}
+}
+.container{
+    margin: auto;
+    text-align: center;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    -webkit-transform: translate(-50%, -50%);
+    -moz-transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    -o-transform: translate(-50%, -50%);
+}
+h1{
+    font-weight: 300;
+    margin-bottom: 40px;
+}
+.calculator{
+
+}
+.calculator input{
+    height: 60px;
+    width: 100%;
+    padding: 10px;
+    margin: 10px 0;
+    color :#171825;
+    font-size: 35px;
+}
+
+.calculator .button{
+    width: 100%;
+    margin: auto;
+}
+.container .row {
+    display: flex;
+    justify-content: center;
+    align-content: center;
+}
+.calculator .button .col  button{
+    display: inline;
+    width: 14vw;
+    padding: 15px;
+    margin: 3px;
+    font-size: 25px;
+    line-height: 23px;
+    background-color: #fff;
+    outline: none;
+    border: none;
+    cursor: pointer;
+}
+.calculator .button .col  button:hover {
+    box-shadow: 2px 2px 2px rgba(233, 233, 233, 0.512) ;
+}
+.calculator .button .col .c-culc{
+    background-color: #e74c3c;
+    color: white;
+}
+.calculator .button .col .c-culc:hover{
+    box-shadow: 2px 2px 2px #e74d3c53 ;
+
+}
+.calculator .button .col .Equl{
+    background-color: #4caf50;
+    color: white;
+}
+.calculator .button .col .Equl:hover{
+    box-shadow: 2px 2px 2px #4caf5053 ;
+
+}

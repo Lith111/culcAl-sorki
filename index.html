@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- file of style  -->
+    <link rel="stylesheet" href="css/style.css">
+    <title>Document</title>
+</head>
+<body>
+    <!-- the container of CALCULATOR -->
+    <div class="container">
+        <h1 class="titly_calc" >calculator by <span style="color: #e74c3c;"> laith sorki </span> </h1>
+        <div class="calculator">
+            <input type="text" name="screen" id="answer" readonly >
+            <div class="button">
+               <div class="row">
+                <div class="col"><button onclick="disone()">(</button></div>
+                <div class="col"><button onclick="distwo()" >)</button></div>
+                <div class="col"><button  onclick="display('%')">%</button></div>
+                <div class="col"><button class="c-culc" onclick="display('no')">C</button></div>
+               </div>
+               <div class="row">
+                <div class="col"><button  onclick="display('7')">7</button></div>
+                <div class="col"><button onclick="display('8')">8</button></div>
+                <div class="col"><button onclick="display('9')">9</button></div>
+                <div class="col"><button onclick="display('*')">*</button></div>
+               </div>
+               <div class="row">
+                <div class="col"><button onclick="display('4')">4</button></div>
+                <div class="col"><button  onclick="display('5')">5</button></div>
+                <div class="col"><button  onclick="display('6')">6</button></div>
+                <div class="col"><button  onclick="display('-')">-</button></div>
+               </div>
+               <div class="row">
+                <div class="col"><button onclick="display('3')">3</button></div>
+                <div class="col"><button onclick="display('2')">2</button></div>
+                <div class="col"><button onclick="display('1')">1</button></div>
+                <div class="col"><button onclick="display('+')">+</button></div>
+               </div>
+               <div class="row">
+                <div class="col"><button onclick="display('0')">0</button></div>
+                <div class="col"><button onclick="display('.')">.</button></div>
+                <div class="col"><button onclick="display('/')">/</button></div>
+                <div class="col"><button class="Equl" onclick="Equl()">=</button></div>
+               </div>
+            </div>
+            
+        </div>
+    </div>
+    <script src="js/script.js"></script>
+</body>
+</html>
